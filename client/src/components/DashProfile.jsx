@@ -49,8 +49,8 @@ export default function DashProfile() {
           "Could not upload image (File must be less than 2MB)"
         );
         setImageFileUploadProgress(null);
-        setImageFile(null)
-        setImageFileUrl(null)
+        setImageFile(null);
+        setImageFileUrl(null);
       },
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
