@@ -49,9 +49,14 @@ const userSlice = createSlice({
             state.loading = false
             state.error = action.payload // payload 就是传入的参数
         },
+        signOutSuccess: (state, action) => {
+            state.currentUser = null;
+            state.loading = false;
+            state.error = null;
+        },
     }
 })
 
-export const { signInStart, signInSuccess, signInFailure, updateStart, updateSuccess, updateFailure, deleteUserStart, deleteUserSuccess, deleteUserFailure } = userSlice.actions
+export const { signInStart, signInSuccess, signInFailure, updateStart, updateSuccess, updateFailure, deleteUserStart, deleteUserSuccess, deleteUserFailure, signOutSuccess } = userSlice.actions
 
 export default userSlice.reducer
