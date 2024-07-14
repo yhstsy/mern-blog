@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { TextInput, Select, FileInput, Button, Alert } from "flowbite-react";
-import React, { useState } from "react";
-import { TextInput, Select, FileInput, Button, Alert } from "flowbite-react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import {
@@ -123,19 +121,6 @@ export default function CreatePost() {
             gradientDuoTone="purpleToBlue"
             size="sm"
             outline
-            onClick={handleUploadImage}
-            disabled={imageUploadProgress}
-          >
-            {imageUploadProgress ? (
-              <div className="w-16 h-16">
-                <CircularProgressbar
-                  value={imageUploadProgress}
-                  text={`${imageUploadProgress || 0}$`}
-                />
-              </div>
-            ) : (
-              "Upload image"
-            )}
             onClick={handleUploadImage}
             disabled={imageUploadProgress}
           >
