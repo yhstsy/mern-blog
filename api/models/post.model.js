@@ -16,7 +16,7 @@ const postSchema = new mongoose.Schema({
     },
     image: {
         type: String,
-        default: "https://th.bing.com/th/id/OIP.iPkdwQAEmI1t8-20DYl9ZgHaEE?w=1112&h=610&rs=1&pid=ImgDetMain",
+        default: "https://thelifecode.net/wp-content/uploads/2019/03/what-is-a-blog-and-how-is-it-different-from-a-website-explained.png",
     },
     category:{
         type:String,
