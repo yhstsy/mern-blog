@@ -177,7 +177,8 @@ export default function UpdatePost() {
           required
           value={formData.content}
           onChange={(value) => {
-            formData.content = value;
+            // formData.content = value;
+            setFormData({ ...formData, content: value });
           }}
         />
         <Button type="submit" gradientDuoTone="purpleToPink">
