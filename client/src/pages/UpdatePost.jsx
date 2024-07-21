@@ -107,6 +107,7 @@ export default function UpdatePost() {
       setPublishError(error.message);
     }
   };
+  // console.log(formData);
   return (
     <div className="p-3 max-w-3xl mx-auto min-h-screen">
       <h1 className="text-center text-3xl my-7 font-semibold">Update post</h1>
@@ -174,10 +175,10 @@ export default function UpdatePost() {
           placeholder="Write something..."
           className="h-72 mb-12"
           required
-          onChange={(value) => {
-            setFormData({ ...formData, content: value });
-          }}
           value={formData.content}
+          onChange={(value) => {
+            formData.content = value;
+          }}
         />
         <Button type="submit" gradientDuoTone="purpleToPink">
           Update post
